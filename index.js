@@ -17,7 +17,8 @@ function createIssue() {
 }
 
 function showResults(json) {
-  $('#results').append(`<a href="${json.html_url}"> ${json.html_url}</a>`)
+  // $('#results').append(`<a href="${json.html_url}"> ${json.html_url}</a>`)
+  $('#results').append(`<h3>Forked Successfully!</h3><a href="${this.url}"> ${this.url}</a>)`)
 }
 
 function forkRepo() {
