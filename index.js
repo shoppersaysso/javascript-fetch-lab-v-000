@@ -24,15 +24,6 @@ function showResults(results) {
       <li>Title: <a href="${this.url}">${this.title} </a> — Body: ${this.body}</li>
       `)}.join('') + "</ul>";
       document.getElementById("results").innerHTML = forkList
-  }
-
-
-
-  //   return (`
-  //   <li>Title: <a href="${this.url}">${this.title} </a><span> | Body: ${this.body}</span></li>
-  //   `
-  //   }).join('') + "</ul>";
-  document.getElementById("results").innerHTML = repo
 }
 
 
