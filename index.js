@@ -20,6 +20,20 @@ function showIssues(json) {
   }
 
 function createIssue() {
+  var issueTitle = document.getElementById("title").value
+
+var issueBody = document.getElementById("body").value
+const fork = `${username}/javascript-fetch-lab`
+var issueData = {title: issueTitle, body: issueBody}
+//use fetch to fork it!
+fetch(`https://api.github.com/repos/${fork}/issues`, {
+  method: 'post',
+  headers: {
+    'Authorization': `token ${getToken()}`
+  },
+  body: JSON.stringify(issueData)
+}).then(resp => getIssues());
+
 }
 
 function showResults(json) {
