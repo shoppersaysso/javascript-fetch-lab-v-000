@@ -1,15 +1,15 @@
 const token = getToken()
 
-function getIssues() {
-  const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
-  fetch(repo, {
-    method: 'get',
-    headers: {
-      Authorization: `token ${token}`,
-    }
-  }).then(res => showIssues(res));
-
-}
+// function getIssues() {
+//   const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
+//   fetch(repo, {
+//     method: 'get',
+//     headers: {
+//       Authorization: `token ${token}`,
+//     }
+//   }).then(res => showIssues(res));
+//
+// }
 
 function showIssues(json) {
 }
