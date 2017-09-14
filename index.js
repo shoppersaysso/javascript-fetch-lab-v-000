@@ -16,6 +16,7 @@ function createIssue() {
 }
 
 function showResults(res) {
+  const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
   $('#results').append(repo.template())
 }
 
