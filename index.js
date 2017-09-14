@@ -34,7 +34,7 @@ function createIssue() {
 function showResults(json) {
   $('#results').append(`<a href="${json.html_url}"> ${json.html_url}</a>`)
 }
-// 
+//
 // function forkRepo() {
 //   fetch(`https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks`, {
 //     method: 'POST',
@@ -42,7 +42,7 @@ function showResults(json) {
 //       Authorization: `token ${getToken()}`,
 //     }
 //   }).then(res => res.json()).then(json => showResults(json));
-// 
+//
 // }
 function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
