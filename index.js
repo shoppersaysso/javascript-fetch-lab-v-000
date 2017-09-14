@@ -9,25 +9,10 @@ function getIssues() {
   }
 
 function showIssues(json) {
-  var div = document.getElementById("issues")
-    debugger
-    for (var i = 0, l = json.length; i < l; i++) {
-      $("#issues").append(`<li>${json[i].title}</li>`)
-    }
+
   }
 
 function createIssue() {
-  var issueTitle = document.getElementById("title").value
-  var issueBody = document.getElementById("body").value
-  const fork = `shoppersaysso/javascript-fetch-lab`
-  var issueData = {title: issueTitle, body: issueBody}
-  fetch(`https://api.github.com/repos/${fork}/issues`, {
-    method: 'post',
-    headers: {
-    'Authorization': `token ${getToken()}`
-  },
-  body: JSON.stringify(issueData)
-}).then(resp => getIssues());
 
 }
 
