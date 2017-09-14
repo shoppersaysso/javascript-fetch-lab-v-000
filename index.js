@@ -18,7 +18,7 @@ function createIssue() {
 
 function showResults(json) {
   // $('#results').append(`<a href="${json.html_url}"> ${json.html_url}</a>`)
-  $('#results').append(`<h3>Forked Successfully!</h3><a href="${json.html_url}"> ${json.url}</a>`)
+  $('#results').append(`<h3>Forked Successfully!</h3><a href="${json.html_url}"> ${json.html_url}</a>`)
 }
 
 function forkRepo() {
@@ -27,7 +27,7 @@ function forkRepo() {
     headers: {
       Authorization: `token ${getToken()}`
     }
-  }).then(res => res.json()).then(json => showResults(json));
+  }).then(res => res.json()).then(json => console.log(json));
 
 }
 
