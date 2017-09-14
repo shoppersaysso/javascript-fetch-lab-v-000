@@ -26,7 +26,6 @@ function showResults(results) {
     }).join('') + "</ul>";
   document.getElementById("results").innerHTML = forkList
 }
-}
 
 
 
