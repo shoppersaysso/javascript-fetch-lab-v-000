@@ -16,7 +16,7 @@ function createIssue() {
 }
 
 function showResults(res) {
-  v$('#results').append(repo.template())
+  $('#results').append(repo.template())
 }
 
 function forkRepo() {
