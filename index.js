@@ -35,7 +35,7 @@ function forkRepo() {
     headers: {
       Authorization: `token ${token}`,
     }
-  }).then(res => showResults(res));
+  }).then(res => console.log(res));
 
 }
 
