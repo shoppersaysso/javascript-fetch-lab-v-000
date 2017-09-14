@@ -5,7 +5,7 @@ function getIssues() {
     fetch(`https://api.github.com/repos/${fork}/issues`, {
       method: 'get',
       headers: {
-        Authorization: `token ${getToken()}`
+        Authorization: `token ${token}`
       }
     }).then(resp => resp.json()).then(data => showIssues(data))
   }
