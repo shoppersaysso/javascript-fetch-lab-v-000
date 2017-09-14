@@ -2,7 +2,7 @@
 // const postData = {
 //   body: 'Great stuff'
 // };
-// 
+//
 // fetch('https://api.github.com/repos/shoppersaysso/space-invaders-v-000/commits/2e6c34c649a5d091f32d72d2ee2011bb64bd7823/comments', {
 //   method: 'POST',
 //   body: JSON.stringify(postData),
@@ -27,7 +27,6 @@ function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
   fetch('https://api.github.com/repos/' + repo + '/forks',{
     method: 'POST'
-     /repos/:owner/:repo/forks)
   }
 
 
