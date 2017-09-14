@@ -21,8 +21,6 @@ function showResults(json) {
   $('#results').append(`<a href="${json.html_url}"> ${json.html_url}</a> — Body: ${this.body}`)
 }
 
-
-
 function forkRepo() {
   const repo = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks'
   fetch(repo, {
