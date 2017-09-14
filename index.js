@@ -12,7 +12,12 @@
 // }
 
 function showIssues(json) {
-}
+  var div = document.getElementById("issues")
+    debugger
+    for (var i = 0, l = json.length; i < l; i++) {
+      $("#issues").append(`<li>${json[i].title}</li>`)
+    }
+  }
 
 function createIssue() {
 }
