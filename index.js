@@ -15,18 +15,18 @@ function showIssues(json) {
 function createIssue() {
 }
 
-// function showResults(res) {
-//   var forks = JSON.parse(this.responseText)
-//   const forkList = "<ul>" + forks.map(fork => {
-//       return(`
-//             <li>
-//               <h2>${fork.name}</h2>
-//               <a href="${fork.html_url}">${fork.html_url}</a><br>
-//             </li>`
-//             )
-//     }).join('') + "</ul>";
-//     document.getElementById("results").innerHTML = forkList
-// }
+function showResults(res) {
+  var forks = JSON.parse(this.responseText)
+  const forkList = "<ul>" + forks.map(fork => {
+      return(`
+            <li>
+              <h2>${fork.name}</h2>
+              <a href="${fork.html_url}">${fork.html_url}</a><br>
+            </li>`
+            )
+    }).join('') + "</ul>";
+    document.getElementById("results").innerHTML = forkList
+}
 
 function forkRepo() {
   const repo = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks'
