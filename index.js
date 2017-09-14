@@ -5,7 +5,7 @@ function getIssues() {
   fetch(repo, {
     method: 'get',
     headers: { Authorization: `token ${token}` }
-  }).then(res => showIssues(results))
+  }).then(res => showIssues(res))
 }
 
 function showIssues(json) {
