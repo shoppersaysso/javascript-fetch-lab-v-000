@@ -35,11 +35,10 @@ function forkRepo() {
     headers: {
       Authorization: `token ${token}`,
     }
-  }).then(resp => {
-  let repo = new Repo(resp);
-  showResult(repo);
-})
+  }).then(res => showResults(results));
+
 }
+
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
