@@ -1,13 +1,12 @@
 function getIssues() {
-  const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
-  fetch(repo, {
-    method: 'get',
-    headers: {
-      Authorization: `token ${token}`,
-    }
-  }).then(res => showIssues(res));
-
-}
+  const fork = `${username}/javascript-fetch-lab`
+    fetch(`https://api.github.com/repos/${fork}/issues`, {
+      method: 'get',
+      headers: {
+        Authorization: `token ${getToken()}`
+      }
+    }).then(resp => resp.json()).then(data => showIssues(data))
+  }
 
 function showIssues(json) {
   var div = document.getElementById("issues")
