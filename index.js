@@ -18,6 +18,10 @@ function createIssue() {
 }
 
 function showResults(json) {
+  $('#results').append(`<a href="${json.html_url}"> ${json.html_url}</a> — Body: ${this.body}`)
+
+
+
   const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
   const forkList = "<ul>" + results(res => {
     return (`
