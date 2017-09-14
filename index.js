@@ -17,8 +17,14 @@ function createIssue() {
 
 function showResults(res) {
   const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
+  const forkList = "<ul>" + forks.map(fork => {
+    return
+    `<li>Title: <a href="${this.url}">${this.title} </a><span> | Body: ${this.body}</span></li>`
+
   $('#results').append(repo.template())
 }
+
+
 
 function forkRepo() {
   const repo = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks'
