@@ -15,7 +15,7 @@ function showIssues(json) {
 function createIssue() {
 }
 
-function showResults(json) {
+function showResults(res) {
   var forks = JSON.parse(this.responseText)
   const forkList = "<ul>" + forks.map(fork => {
       return(`
