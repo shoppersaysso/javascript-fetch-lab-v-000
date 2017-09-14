@@ -22,7 +22,7 @@ function showResults(results) {
   const forkList = "<ul>" + forks.map(fork => {
     return (`
       <li>Title: <a href="${this.url}">${this.title} </a> — Body: ${this.body}</li>
-      `)
+      `)}.join('') + "</ul>"
   }
 
 
