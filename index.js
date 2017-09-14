@@ -23,7 +23,7 @@ function showResults(results) {
     return (`
     <li>Title: <a href="${this.url}">${this.title} </a><span> | Body: ${this.body}</span></li>
     `
-    }).join('') + "</ul>";
+    ).join('') + "</ul>";
   document.getElementById("results").innerHTML = forkList
 }
 
