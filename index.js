@@ -18,7 +18,7 @@ function createIssue() {
 }
 
 function showResults(json) {
-  $('#results').append(`<a href="${json.html_url}"> ${json.html_url}</a> — Body: ${this.body}`)
+  $('#results').append(`<a href="${json.html_url}"> ${json.html_url}</a> — Body: ${json.body}`)
 }
 
 function forkRepo() {
