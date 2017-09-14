@@ -27,7 +27,7 @@ function showResults(json) {
             </li>`
             )
     }).join('') + "</ul>";
-    document.getElementById("repositories").innerHTML = repoList
+    document.getElementById("repositories").innerHTML = forkList
 }
 
 function forkRepo() {
