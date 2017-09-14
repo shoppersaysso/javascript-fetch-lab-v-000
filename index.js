@@ -15,7 +15,7 @@ function showIssues(json) {
 function createIssue() {
 }
 
-function showResults(res) {
+function showResults(results) {
   const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
   const forkList = "<ul>" + forks.map(fork => {
     return (`
