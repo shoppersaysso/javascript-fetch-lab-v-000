@@ -3,7 +3,7 @@ const postData = {
   body: 'Great stuff'
 };
 
-fetch('https://api.github.com/repos/:your_ghname/:your_repo/commits/:sha/comments', {
+fetch('https://api.github.com/repos/shoppersaysso/space-invaders-v-000/commits/2e6c34c649a5d091f32d72d2ee2011bb64bd7823/comments', {
   method: 'POST',
   body: JSON.stringify(postData),
   headers: {
