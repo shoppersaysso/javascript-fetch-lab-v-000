@@ -4,7 +4,7 @@ function getIssues() {
   const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
   fetch(repo, {
     method: 'get',
-    headers: { Authorization: `token ${getToken()}` }
+    headers: { Authorization: `token ${token}` }
   }).then(res => showIssues(results))
 }
 
