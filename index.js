@@ -1,11 +1,11 @@
-const token = getToken()
+
 
 function getIssues() {
   const fork = `shoppersaysso/javascript-fetch-lab`
     fetch(`https://api.github.com/repos/${fork}/issues`, {
       method: 'get',
       headers: {
-        Authorization: `token ${token}`
+        Authorization: `token ${getToken()}`
       }
     }).then(resp => resp.json()).then(data => showIssues(data))
   }
