@@ -1,6 +1,7 @@
 const token = getToken()
 
 function getIssues() {
+  
   const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
   fetch(repo, {
     method: 'get',
