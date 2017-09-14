@@ -23,7 +23,7 @@ function createIssue() {
   var issueTitle = document.getElementById("title").value
 
 var issueBody = document.getElementById("body").value
-const fork = `${username}/javascript-fetch-lab`
+const fork = `shoppersaysso/javascript-fetch-lab`
 var issueData = {title: issueTitle, body: issueBody}
 //use fetch to fork it!
 fetch(`https://api.github.com/repos/${fork}/issues`, {
