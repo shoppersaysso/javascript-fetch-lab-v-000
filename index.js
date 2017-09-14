@@ -1,7 +1,6 @@
 const token = getToken()
 
 function getIssues() {
-  
   const repo = 'https://api.github.com/repos/shoppersaysso/javascript-fetch-lab/issues'
   fetch(repo, {
     method: 'get',
@@ -17,6 +16,18 @@ function createIssue() {
 }
 
 function showResults(json) {
+  var forks = JSON.parse(this.responseText)
+  const forkList = "<ul>" + forks.map(fork => {
+      const dataUsername = 'data-username="' + repo.owner.login + '"'
+      const dataRepoName = 'data-repository="' + repo.name + '"'
+      return(`
+            <li>
+              <h2>${fork.name}</h2>
+              <a href="${repo.html_url}">${repo.html_url}</a><br>
+            </li>`
+            )
+    }).join('') + "</ul>";
+    document.getElementById("repositories").innerHTML = repoList
 }
 
 function forkRepo() {
