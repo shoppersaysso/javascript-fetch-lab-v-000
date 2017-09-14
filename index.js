@@ -22,7 +22,7 @@ function showResults(res) {
     <li>Title: <a href="${this.url}">${this.title} </a><span> | Body: ${this.body}</span></li>
     `
     }).join('') + "</ul>";
-  $('#results').append(repo.template())
+  document.getElementById("results").innerHTML = forkList
 }
 
 
