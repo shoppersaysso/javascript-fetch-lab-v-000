@@ -1,4 +1,4 @@
-
+const token = getToken()
 
 function getIssues() {
   const fork = `shoppersaysso/javascript-fetch-lab`
@@ -24,7 +24,6 @@ function showResults(json) {
 }
 
 function forkRepo() {
-  const token = 'cc8eb717d6bb9cf3fcad1ecad094dbe540eff761'
   fetch(`https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks`, {
     method: 'post',
     headers: {
