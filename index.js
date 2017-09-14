@@ -18,8 +18,6 @@ function createIssue() {
 function showResults(json) {
   var forks = JSON.parse(this.responseText)
   const forkList = "<ul>" + forks.map(fork => {
-      const dataUsername = 'data-username="' + repo.owner.login + '"'
-      const dataRepoName = 'data-repository="' + repo.name + '"'
       return(`
             <li>
               <h2>${fork.name}</h2>
