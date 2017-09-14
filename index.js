@@ -21,7 +21,7 @@ function showResults(json) {
       return(`
             <li>
               <h2>${fork.name}</h2>
-              <a href="${repo.html_url}">${repo.html_url}</a><br>
+              <a href="${fork.html_url}">${fork.html_url}</a><br>
             </li>`
             )
     }).join('') + "</ul>";
