@@ -1,5 +1,5 @@
 function getIssues() {
-  const fork = `${username}/javascript-fetch-lab`
+  const fork = `shoppersaysso/javascript-fetch-lab`
     fetch(`https://api.github.com/repos/${fork}/issues`, {
       method: 'get',
       headers: {
